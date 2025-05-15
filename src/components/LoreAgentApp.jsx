@@ -5,7 +5,7 @@ const LoreAgentApp = () => {
   const [connected, setConnected] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const [balance, _setBalance] = useState('45.32');
+  const [balance, setBalance] = useState('45.32');
   const [agentStatus, setAgentStatus] = useState('Ready');
   const [advancedMode, setAdvancedMode] = useState(false);
   const [transactionApproval, setTransactionApproval] = useState(false);
@@ -27,6 +27,7 @@ const LoreAgentApp = () => {
       messageInputRef.current.focus();
     }
   }, [activeTab]);
+  
   
   // Function to play the sound effect
 const playSound = () => {
