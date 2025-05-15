@@ -209,14 +209,14 @@ const playSound = () => {
     <div className="bg-black min-h-screen text-gray-200">
       {/* Fixed Twitter button with big white X */}
 <a 
-  href="https://x.com/elonmusk" 
+  href="https://x.com/loreagent" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="fixed top-4 right-4 z-50 bg-black hover:bg-gray-800 text-white p-2 rounded-lg shadow-lg transition-all duration-200 flex items-center justify-center border border-gray-700"
   onClick={(e) => {
     e.preventDefault();
     playSound();
-    window.open('https://x.com/elonmusk', '_blank', 'noopener,noreferrer');
+    window.open('https://x.com/loreagent', '_blank', 'noopener,noreferrer');
   }}
 >
   <span className="text-white font-bold text-2xl">𝕏</span>
