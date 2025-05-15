@@ -5,7 +5,7 @@ const LoreAgentApp = () => {
   const [connected, setConnected] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const [balance, setBalance] = useState('45.32');
+  const [balance, _setBalance] = useState('45.32');
   const [agentStatus, setAgentStatus] = useState('Ready');
   const [advancedMode, setAdvancedMode] = useState(false);
   const [transactionApproval, setTransactionApproval] = useState(false);
@@ -935,12 +935,32 @@ const playSound = () => {
                 <span className="font-bold text-green-400">LORE AGENT</span>
               </div>
               
-              <nav className="flex space-x-6 mb-4 md:mb-0">
-                <a href="#" className="text-gray-400 hover:text-green-400 text-sm">Documentation</a>
-                <a href="#" className="text-gray-400 hover:text-green-400 text-sm">API</a>
-                <a href="#" className="text-gray-400 hover:text-green-400 text-sm">Support</a>
-                <a href="#" className="text-gray-400 hover:text-green-400 text-sm">Privacy</a>
-              </nav>
+             <nav className="flex space-x-6 mb-4 md:mb-0">
+  <button 
+    onClick={handleButtonClick()}
+    className="text-gray-400 hover:text-green-400 text-sm"
+  >
+    Documentation
+  </button>
+  <button 
+    onClick={handleButtonClick()}
+    className="text-gray-400 hover:text-green-400 text-sm"
+  >
+    API
+  </button>
+  <button 
+    onClick={handleButtonClick()}
+    className="text-gray-400 hover:text-green-400 text-sm"
+  >
+    Support
+  </button>
+  <button 
+    onClick={handleButtonClick()}
+    className="text-gray-400 hover:text-green-400 text-sm"
+  >
+    Privacy
+  </button>
+</nav>
               
               <div className="flex space-x-4">
                 <button className="text-gray-400 hover:text-green-400">🔮</button>
